@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Financial Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5 mb-5" >
+        <h2>Financial Information</h2>
+        <form action = "http://localhost:5000" method = "POST" class="form-inline">
+            <div class="input-group form-group">
+                <span class="input-group-text">Symbol</span>
+               <input type="text" class="form-control" id="symbol" name="symbol" placeholder="Enter Stock Symbol" required/>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Financial Information</button>
+        </form>
+        {{result}}
+    </div>
+</body>
+</html>
