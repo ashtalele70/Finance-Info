@@ -9,10 +9,12 @@
     <div class="container mt-5 mb-5" >
         <h2>Financial Information</h2>
         <form action = "http://localhost:5000" method = "POST" class="form-inline">
+
             <div class="input-group form-group">
                 <span class="input-group-text">Symbol</span>
                <input type="text" class="form-control" id="symbol" name="symbol" placeholder="Enter Stock Symbol" required/>
             </div>
+
             <button type="submit" class="btn btn-primary">Get Financial Information</button>
         </form>
         {{result}}
